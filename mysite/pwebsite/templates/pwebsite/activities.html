@@ -1,1 +1,23 @@
-{% extends 'pwebsite/layout.html' %}
+
+{% block title %}Activities{% endblock %}
+
+{% block content %}
+{% load static %}
+<style>
+p{
+    background-color:white;
+    color: black;
+    justify-content: center;
+}
+a{
+    display: block;
+}
+</style>
+<p>AboutMe:</p>
+    {% block body %}
+    <img src="{% static '/images/badminton-player-smash-match-competition-260nw-2018032022.webp' %}" alt="Badminton">
+    <a href="https://en.wikipedia.org/wiki/Badminton">info about Badminton</a>
+    <a href="{% url 'home' %}">Home</a>
+    {% endblock %}
+    <p>I love playing Badmintoon, Swimming, and Workout</p>
+{% endblock%}

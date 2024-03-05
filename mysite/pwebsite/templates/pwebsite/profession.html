@@ -1,11 +1,11 @@
-{% extends "pwebsite/layout.html" %}
 
 {% block content %}
 <h1>{{ title }}</h1>
-<p>I'm learning Webdevelopement</p>
-    {% block profession_content %}
-    <h1>Profession</h1>
-    <p>well you have chosen awesome profession because it has highest growth in the industry</p>
-    {% endblock %}
+<p>I'm learning Web development.</p>
+    <p class="container-fluid bg-gray">Well, I'm passionate about coding, and I've been learning Web Development for the past couple of months.</p>
+    <p>I've completed short programming courses like Python. And I've gained proficiency in programming languages like Python, Django Framework, HTML, and CSS.</p>  
+    <p>During my journey, I've learned problem-solving skills and gained hands-on experience in web applications (my personal projects).</p>
+    <p>My ultimate goal is to leverage my skills and expertise, gaining hands-on real-world experience to build web applications.</p>
     {{ content|safe }}
+    <a href="{% url 'home' %}">Home</a>
 {% endblock %}

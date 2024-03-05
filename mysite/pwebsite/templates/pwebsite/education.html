@@ -1,5 +1,31 @@
-{% extends 'pwebsite/layout.html' %}
+
 
 {% block title %}
-<h1>education</h1>
+
+<h1>Education</h1>
+<style>
+    table, tr, th, td {
+        border: 1px solid black;
+
+    }
+</style>
+<table>
+    <tr>
+        <th>Education</th>       
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Web developer</td>
+        <td>Australia</td>
+    </tr>
+    <tr>
+        <td>Master's of Accounting </td>
+        <td>Australia</td>
+    </tr>
+    <tr>
+        <td>Bachelor's of Mechanical Engineering</td>
+        <td>Hyderabad, India</td>
+    </tr>
+</table>
+<a href="{% url 'home' %}">Home</a>
 {% endblock %}

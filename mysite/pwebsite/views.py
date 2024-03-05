@@ -13,3 +13,6 @@ def education(request):
 def activities(request):
     title = "Activities"
     return render(request, "pwebsite/activities.html", {"title":title})
+
+def home(request):
+    return render(request, "pwebsite/layout.html")

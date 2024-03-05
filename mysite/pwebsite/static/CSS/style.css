@@ -7,5 +7,18 @@ h2{
 .text-left{
     text-align: left!important;
 }
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer ul li{
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: gray;
+}
 
 
